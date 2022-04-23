@@ -1,2 +1,16 @@
 {
+    "name": "hein/php-oop-lesson",
+    "description": "PHP OOp Lesson",
+    "autoload": {
+        "psr-4": {
+            "Hein\\PhpOopLesson\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hein Htet Aung",
+            "email": "heinhtetaung.sglife@gmail.com"
+        }
+    ],
+    "require": {}
 }
