@@ -10,7 +10,7 @@ class ProductController {
     }
 
     public function select() {
-        $datas = $this->productModel->select('product', 10, 0);   
+        $datas = $this->productModel->select('item', 0, 10);   
         require_once(__DIR__.'/../Views/productList.php');
         exit;
     }

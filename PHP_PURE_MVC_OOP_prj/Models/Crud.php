@@ -41,19 +41,8 @@ trait Crud {
 
     public function select($table, $offset, $limit) {
         $sql = "SELECT * FROM ${table} LIMIT ${limit} OFFSET ${offset}";
-        return [
-            [
-                'name' => 'abc',
-                'price' => 100
-            ],
-            [
-                'name' => 'abc1',
-                'price' => 1001
-            ],
-            [
-                'name' => 'abc2',
-                'price' => 1002
-            ]
-        ];
+        $result = $this->dbcon->query($sql);
+        $arr = $result->fetch_all(MYSQLI_ASSOC);
+        return $arr;
     }
 }
