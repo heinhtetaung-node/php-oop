@@ -1,0 +1,19 @@
+{
+    "name": "heinh/php_pure_mvc_oop_prj",
+    "description": "PHP pure mvc oop prj",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Hein Htet Aung",
+            "email": "heinhtetaung.sglife@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Controllers\\":"Controllers/",
+            "Models\\":"Models/"
+        }
+    }
+}

@@ -1,5 +1,7 @@
 <?php
 
+namespace Models;
+
 trait Crud {
     public function insert($table, $data) {
         

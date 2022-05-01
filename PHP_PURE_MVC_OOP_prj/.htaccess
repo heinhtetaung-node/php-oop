@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /php-oop/PHP_PURE_MVC_OOP_prj
+
+# localhost/php-oop/PHP_PURE_MVC_OOP_prj/home <=> localhost/php-oop/PHP_PURE_MVC_OOP_prj/index.php?action=home
+
+RewriteRule ^([a-zA-Z0-9-_]+)/?$ index.php?action=$1
+
+# localhost/php-oop/PHP_PURE_MVC_OOP_prj/products/insert <=> localhost/php-oop/PHP_PURE_MVC_OOP_prj/index.php?action=products&method=insert
+
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/?$ index.php?action=$1&method=$2
+
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)?$ index.php?action=$1&method=$2&id=$3

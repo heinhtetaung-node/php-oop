@@ -1,7 +1,9 @@
 <?php
 
-require_once('Crud.php');
-require_once('DbConnect.php');
+namespace Models;
+
+use Models\DbConnect;
+use Models\Crud;
 
 class Product extends DbConnect {
     use Crud;

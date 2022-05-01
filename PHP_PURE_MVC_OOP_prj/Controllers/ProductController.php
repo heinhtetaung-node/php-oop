@@ -1,5 +1,8 @@
 <?php
-require_once(__DIR__.'/../Models/Product.php');
+
+namespace Controllers;
+
+use Models\Product;
 
 class ProductController {
 
@@ -14,6 +17,17 @@ class ProductController {
         require_once(__DIR__.'/../Views/productList.php');
         exit;
     }
+
+    public function create() {
+        echo 'create';
+    }
     
+    public function detail($id) {
+        echo $id;
+    }
+
+    public function delete($id) {
+        echo $id;
+    }
 
 }
