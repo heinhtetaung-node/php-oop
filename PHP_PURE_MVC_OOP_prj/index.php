@@ -1,8 +1,8 @@
 <?php
 
-use Controllers\ProductController;
-
 require_once('vendor/autoload.php');
+
+use Controllers\ProductController;
 
 $action = isset($_GET['action'])? $_GET['action'] : '';
 $method = isset($_GET['method'])? $_GET['method'] : '';

@@ -3,13 +3,16 @@
 namespace Controllers;
 
 use Models\Product;
+use Models\SubCaetgory;
 
 class ProductController {
 
     public $productModel;
+    public $subCategory;
 
     public function __construct() {
         $this->productModel = new Product();
+        $this->subCategory = new SubCaetgory();
     }
 
     public function select() {
@@ -19,7 +22,9 @@ class ProductController {
     }
 
     public function create() {
-        echo 'create';
+        $subcategories = $this->subCategory->select('subcategory ', 0, 100);
+        require_once(__DIR__.'/../Views/productCreate.php');
+        exit;
     }
     
     public function detail($id) {
