@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once('vendor/autoload.php');
 
@@ -27,6 +28,18 @@ switch ($action) {
             } else {
                 echo '404'; exit;
             }
+
+        } else if ($method == 'edit') {
+
+            if (is_numeric($id)) {
+                $productController->edit($id);
+            } else {
+                echo '404'; exit;
+            }
+
+        } else if ($method == 'insert' && !empty($_POST)) {
+            
+            $productController->insert();
 
         } else { // detail
             

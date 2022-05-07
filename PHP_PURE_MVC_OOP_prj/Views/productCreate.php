@@ -7,7 +7,11 @@
 </head>
 <body>
 	<h1>Product Create</h1>
-	<form style="border: 1px solid black; padding: 20px;" action="" method="POST" enctype="multipart/form-data">
+	<?php if (isset($_SESSION['error'])): ?> 
+		<span><?php echo $_SESSION['error']; ?><span>
+	<?php unset($_SESSION['error']); ?>
+	<?php endif; ?>
+	<form style="border: 1px solid black; padding: 20px;" action="<?php echo './../product/insert/'; ?>" method="POST" enctype="multipart/form-data">
 		Title <br>
 		<input type="text" name="title"> <br> <br>
 		Sub Category <br> 

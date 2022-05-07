@@ -17,7 +17,8 @@ trait Crud {
         $values = substr($values, 0, -1);
 
         $sql = "INSERT INTO ${table} (${keys}) VALUES (${values})";
-        echo $sql;
+        $result = $this->dbcon->query($sql);
+        return $result;
     }
 
     public function update($table, $data, $id) {
@@ -33,7 +34,8 @@ trait Crud {
         $values = substr($values, 0, -1);
 
         $sql = "UPDATE ${table} (${keys}) VALUES (${values}) WHERE id = '${id}'";
-        echo $sql;
+        $result = $this->dbcon->query($sql);
+        var_dump($result);
     }
 
     public function delete($table, $id) {
