@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => NULL,
+        'name' => 'hp/php-oop',
+        'dev' => true,
+    ),
+    'versions' => array(
+        'brewerwall/php-barcode-generator' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../brewerwall/php-barcode-generator',
+            'aliases' => array(),
+            'reference' => 'c2ef18cd3cd9260af557a8d6bfa1448556ab153d',
+            'dev_requirement' => false,
+        ),
+        'hp/php-oop' => array(
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => NULL,
+            'dev_requirement' => false,
+        ),
+        'jfilla/php-barcode-generator' => array(
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../jfilla/php-barcode-generator',
+            'aliases' => array(),
+            'reference' => 'b75e3bae9d4083a71d499ef46a24b7a6ade0db89',
+            'dev_requirement' => false,
+        ),
+    ),
+);

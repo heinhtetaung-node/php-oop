@@ -1,0 +1,17 @@
+body {
+    background-color: #00FFFF;
+}
+
+#proDiv {
+    margin-bottom: 10px;
+}
+
+#proTitleDiv {
+    background-color: #e8e8e8;
+    height: 50px;
+}
+
+#proFootDiv {
+    background-color: #c2c2c2;
+    height: 25px;
+}

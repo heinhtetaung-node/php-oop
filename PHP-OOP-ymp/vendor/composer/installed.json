@@ -1,0 +1,165 @@
+{
+    "packages": [
+        {
+            "name": "brewerwall/php-barcode-generator",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brewerwall/php-barcode-generator.git",
+                "reference": "c2ef18cd3cd9260af557a8d6bfa1448556ab153d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brewerwall/php-barcode-generator/zipball/c2ef18cd3cd9260af557a8d6bfa1448556ab153d",
+                "reference": "c2ef18cd3cd9260af557a8d6bfa1448556ab153d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "time": "2019-09-20T20:28:10+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Test\\": "tests",
+                    "Brewerwall\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "homepage": "http://nicolaasuni.tecnick.com"
+                },
+                {
+                    "name": "Casper Bakker",
+                    "email": "info@picqer.com"
+                },
+                {
+                    "name": "Ben Griffith",
+                    "email": "ben@pbrewerwall.com",
+                    "homepage": "http://brewerwall.com"
+                }
+            ],
+            "description": "An easy to use, non-bloated, barcode generator in PHP. Creates SVG, PNG, JPG and HTML images from the most used 1D barcode standards.",
+            "homepage": "http://github.com/brewerwall/php-barcode-generator",
+            "keywords": [
+                "CODABAR",
+                "Code11",
+                "Code93",
+                "EAN13",
+                "KIX",
+                "KIXCODE",
+                "MSI",
+                "POSTNET",
+                "Pharma",
+                "Standard 2 of 5",
+                "barcode",
+                "barcode generator",
+                "code128",
+                "code39",
+                "ean",
+                "html",
+                "jpeg",
+                "jpg",
+                "php",
+                "png",
+                "svg",
+                "upc"
+            ],
+            "support": {
+                "issues": "https://github.com/brewerwall/php-barcode-generator/issues",
+                "source": "https://github.com/brewerwall/php-barcode-generator/tree/master"
+            },
+            "install-path": "../brewerwall/php-barcode-generator"
+        },
+        {
+            "name": "jfilla/php-barcode-generator",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jfilla/php-barcode-generator.git",
+                "reference": "b75e3bae9d4083a71d499ef46a24b7a6ade0db89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jfilla/php-barcode-generator/zipball/b75e3bae9d4083a71d499ef46a24b7a6ade0db89",
+                "reference": "b75e3bae9d4083a71d499ef46a24b7a6ade0db89",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "time": "2018-02-19T11:23:40+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JFilla\\Barcode\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "homepage": "http://nicolaasuni.tecnick.com"
+                },
+                {
+                    "name": "Casper Bakker",
+                    "email": "info@picqer.com"
+                },
+                {
+                    "name": "Jakub Filla",
+                    "email": "jakub.filla@seznam.cz"
+                }
+            ],
+            "description": "An easy to use, non-bloated, barcode generator in PHP. Creates SVG, PNG, JPG and HTML images from the most used 1D barcode standards.",
+            "homepage": "http://github.com/picqer/php-barcode-generator",
+            "keywords": [
+                "CODABAR",
+                "Code11",
+                "Code93",
+                "EAN13",
+                "KIX",
+                "KIXCODE",
+                "MSI",
+                "POSTNET",
+                "Pharma",
+                "Standard 2 of 5",
+                "barcode",
+                "barcode generator",
+                "code128",
+                "code39",
+                "ean",
+                "html",
+                "jpeg",
+                "jpg",
+                "php",
+                "png",
+                "svg",
+                "upc"
+            ],
+            "support": {
+                "issues": "https://github.com/jfilla/php-barcode-generator/issues",
+                "source": "https://github.com/jfilla/php-barcode-generator/tree/master"
+            },
+            "install-path": "../jfilla/php-barcode-generator"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

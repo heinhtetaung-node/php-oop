@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /PHP-OOP-ymp
+
+RewriteRule ^([a-zA-Z0-9-_]+)/?$ index.php?action=$1
+
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/?$ index.php?action=$1&method=$2
+
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)?$ index.php?action=$1&method=$2&id=$3 
